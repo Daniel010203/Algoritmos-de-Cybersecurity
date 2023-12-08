@@ -1,0 +1,23 @@
+EM JAVASCRIPT:
+
+// Função para verificar a segurança da URL
+function verificarSegurancaURL(url) {
+  // Verifica se a URL começa com "https://"
+  if (url.startsWith("https://")) {
+    console.log("URL segura");
+  }
+  // Verifica se a URL começa com "http://"
+  else if (url.startsWith("http://")) {
+    console.log("URL não segura");
+  }
+  // Se a URL não começar nem com "https://" nem com "http://", considera como formato inválido
+  else {
+    console.log("Formato inválido");
+  }
+}
+
+// Exemplos de uso
+verificarSegurancaURL("https://web.dio.me/");
+verificarSegurancaURL("https://github.com/");
+verificarSegurancaURL("http://gitluby.com/");
+verificarSegurancaURL("www.example.com");
